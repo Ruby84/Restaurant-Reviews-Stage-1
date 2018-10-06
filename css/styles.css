@@ -135,21 +135,10 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
-#restaurants-list {
-  background-color: #f3f3f3;
-  list-style: outside none none;
-  margin: 0;
-  padding: 30px 15px 60px;
-  text-align: center;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
-  column-fill: balance;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
-}
+#restaurants-list { display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
@@ -219,7 +208,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 85%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
