@@ -5,16 +5,20 @@ body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16pt;
 	color: #333;
-	line-height: 2.5;
+	line-height: 1.5;
 }
+
 body {
 	background-color: #fdfdfd;
 	margin: 0;
  height: 100vh;
  width: 100vw;
  font-size: 10px;
-
+position: relative;
   
+}
+ul {
+  padding: 0;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -55,14 +59,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
+  text-align: center;
   width: 100%;
-  height: 64px;
+  
   background-color: #252831;
-  text-align:center;
-  font-weight: bold;
+  
+  
 }
 nav h1 {
-    padding-top: 25px;
+    padding: 20px;
     margin: auto;
 }
 nav h1 a {
@@ -73,12 +78,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+   padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: black;
     font-size: 1.7rem;
     margin: 0;
-    width: 100%;
+    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -213,6 +218,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   width: 100%;
+  position: fixed;
 
 }
 #restaurant-name {
@@ -278,8 +284,6 @@ nav h1 a {
   padding: 0;
 }
 #reviews-list li {
-  background-color: #fff;
-    border: 2px solid #f3f3f3;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;

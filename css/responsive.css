@@ -40,6 +40,24 @@
         column-fill: balance;
     }
 
+    .inside #footer {
+        bottom: 0;
+        position: fixed;
+       
+
+        width: cacl(50% - 50px);
+    }
+
+    @media(min-width: 800px) {
+    ul#restaurants-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px 10px;
+        justify-self: start;
+        padding-left: 0px;
+      }
+    }
 
 
 @media(max-width: 768px) {
@@ -61,6 +79,9 @@ nav h1{
 ul, li{
     display: inline;
     font-size: 25px;
+}
+ul#restaurants-list {
+    padding-left: 0px;
 }
     #restaurant-cuisine {
         font-size: 1.8rem;
@@ -238,6 +259,7 @@ ul, li{
     #breadcrumb {
         width: 100%;
         padding: 10px 5px 15px;
+        
     }
     #breadcumb li{
         display: inline;
